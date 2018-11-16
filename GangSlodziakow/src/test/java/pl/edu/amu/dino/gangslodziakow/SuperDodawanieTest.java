@@ -83,7 +83,7 @@ public class SuperDodawanieTest {
     }
         
     @Test
-        public void testSuperdodawanie3() {
+        public void testSuperdodawanie4() {
         System.out.println("superdodawanie");
         String a = "tonie";
         String b = "dziala";
