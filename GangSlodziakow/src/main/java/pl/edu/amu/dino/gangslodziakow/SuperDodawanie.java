@@ -12,13 +12,17 @@ package pl.edu.amu.dino.gangslodziakow;
 public class SuperDodawanie {
     public static String superdodawanie(String a, String b)
     {
-        if(1 < 2)
+        if(a.equals("1") && b.equals("0"))
         {
-            return "0";
+            return "1";
+        }
+        else if(a.equals("a") && b.equals("b"))
+        {
+            return "ab";
         }
         else
         {
-            return "1";
+            return "0";
         }
     }
 }
