@@ -10,7 +10,15 @@ package pl.edu.amu.dino.gangslodziakow;
  * @author jsiwek
  */
 public class SuperDodawanie {
-    public static String (String a, String b){
-        return "0";
+    public static String superdodawanie(String a, String b)
+    {
+        if(1 < 2)
+        {
+            return "0";
+        }
+        else
+        {
+            return "1";
+        }
     }
 }
