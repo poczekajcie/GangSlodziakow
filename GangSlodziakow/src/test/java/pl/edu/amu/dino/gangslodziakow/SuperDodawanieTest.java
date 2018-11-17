@@ -69,5 +69,29 @@ public class SuperDodawanieTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+        
+    @Test
+        public void testSuperdodawanie3() {
+        System.out.println("superdodawanie");
+        String a = "a";
+        String b = "b";
+        String expResult = "ab";
+        String result = SuperDodawanie.superdodawanie(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+        
+    @Test
+        public void testSuperdodawanie4() {
+        System.out.println("superdodawanie");
+        String a = "tonie";
+        String b = "dziala";
+        String expResult = "juzdziala";
+        String result = SuperDodawanie.superdodawanie(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
     
 }
