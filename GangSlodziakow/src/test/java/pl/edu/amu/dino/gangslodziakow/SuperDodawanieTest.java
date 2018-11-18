@@ -40,7 +40,7 @@ public class SuperDodawanieTest {
     @Test
     public void testSomeMethod() {
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -54,8 +54,6 @@ public class SuperDodawanieTest {
         String expResult = "0";
         String result = SuperDodawanie.superdodawanie(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
     @Test
@@ -66,8 +64,6 @@ public class SuperDodawanieTest {
         String expResult = "1";
         String result = SuperDodawanie.superdodawanie(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
         
     @Test
@@ -78,8 +74,6 @@ public class SuperDodawanieTest {
         String expResult = "ab";
         String result = SuperDodawanie.superdodawanie(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
         
     @Test
@@ -87,11 +81,26 @@ public class SuperDodawanieTest {
         System.out.println("superdodawanie");
         String a = "tonie";
         String b = "dziala";
-        String expResult = "juzdziala";
+        String expResult = "toniedziala";
         String result = SuperDodawanie.superdodawanie(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-    
+    @Test
+        public void testSuperdodawanie5() {
+        System.out.println("Dodawanie liczb rzymskich dzialajace");
+        String a = "I";
+        String b = "II";
+        String expResult = "III";
+        String result = SuperDodawanie.superdodawanie(a, b);
+        assertEquals(expResult, result);
+    }        
+    @Test
+        public void testSuperdodawanie6() {
+        System.out.println("Dodawanie liczb rzymskich niedzialajace");
+        String a = "V";
+        String b = "IV";
+        String expResult = "IX";
+        String result = SuperDodawanie.superdodawanie(a, b);
+        assertEquals(expResult, result);
+    }       
 }
