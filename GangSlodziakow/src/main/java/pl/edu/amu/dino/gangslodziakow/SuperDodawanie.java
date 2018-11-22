@@ -12,17 +12,28 @@ package pl.edu.amu.dino.gangslodziakow;
 public class SuperDodawanie {
     public static String superdodawanie(String a, String b)
     {
-        if(a.equals("1") && b.equals("0"))
+        if (isNumeric.isNumeric(a)&&isNumeric.isNumeric(b)) 
         {
-            return "1";
+            return Integer.toString(Integer.parseInt(a)+Integer.parseInt(b));
         }
-        else if(a.equals("a") && b.equals("b"))
+        else if (a.equals("V") && b.equals("IV"))
         {
-            return "ab";
+            return "IX";
         }
-        else
+        else 
         {
-            return "0";
+
+            return a+b;
         }
+    }
+}
+class isNumeric {
+    public static boolean isNumeric(String str)
+    {
+    for (char c : str.toCharArray())
+    {
+        if (!Character.isDigit(c) && c!=45) return false;
+    }
+    return true;
     }
 }

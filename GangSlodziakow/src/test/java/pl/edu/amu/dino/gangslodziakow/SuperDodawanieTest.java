@@ -11,7 +11,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.BeforeClass;
-
 /**
  *
  * @author jsiwek
@@ -103,4 +102,28 @@ public class SuperDodawanieTest {
         String result = SuperDodawanie.superdodawanie(a, b);
         assertEquals(expResult, result);
     }       
+    
+    @Test
+        public void testSuperdodawanie7() {
+        System.out.println("Dodawanie pierwiatskow dzialające");
+        double p1 = Math.sqrt(4);
+        double p2 = Math.sqrt(9);
+        String a = Integer.toString(Double.valueOf(p1).intValue());
+        String b = Integer.toString(Double.valueOf(p2).intValue());
+        String expResult = "5";
+        String result = SuperDodawanie.superdodawanie(a, b);
+        assertEquals(expResult, result);
+    }
+     
+    @Test
+        public void testSuperdodawanie8() {
+        System.out.println("Dodawanie pierwiatskow niedziałające");
+        double p1 = Math.sqrt(3);
+        double p2 = Math.sqrt(11);
+        String a = Integer.toString(Double.valueOf(p1).intValue());
+        String b = Integer.toString(Double.valueOf(p2).intValue());
+        String expResult = "5,0486755979242771426423790781766";
+        String result = SuperDodawanie.superdodawanie(a, b);
+        assertEquals(expResult, result);
+    }
 }
