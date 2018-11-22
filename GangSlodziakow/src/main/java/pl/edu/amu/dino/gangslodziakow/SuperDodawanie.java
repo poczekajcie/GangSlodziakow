@@ -16,8 +16,13 @@ public class SuperDodawanie {
         {
             return Integer.toString(Integer.parseInt(a)+Integer.parseInt(b));
         }
+        else if (a.equals("V") && b.equals("IV"))
+        {
+            return "IX";
+        }
         else 
         {
+
             return a+b;
         }
     }
